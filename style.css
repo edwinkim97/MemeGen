@@ -27,6 +27,13 @@ body {
     margin: 5%;
 }
 
+#del {
+    background-color: blueviolet;
+    position: relative;
+    font-size: 20px;
+    margin: 5px;
+}
+
 li {
 	display: inline-block;
 	text-align: center;
@@ -34,7 +41,7 @@ li {
     margin: 15px;
 }
 
-#up {
+.up {
     font-size: 40px;
     font-family: Impact, 'Arial', sans-serif;
 	position: absolute;
@@ -45,7 +52,7 @@ li {
     text-align: center;
 }
 
-#down {
+.down {
     font-size: 40px;
     font-family: Impact;
 	position: absolute;
@@ -53,13 +60,5 @@ li {
 	left: 30%;
 	text-shadow: 2px 2px black;
 	color: white;
-    text-align: center;
-	
-}
-
-#del {
-    background-color: blueviolet;
-    position: relative;
-    font-size: 20px;
-    margin: 5px;
+    text-align: center;	
 }
