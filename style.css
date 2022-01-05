@@ -1,0 +1,65 @@
+header {
+    font-family: Impact, 'Arial', sans-serif;
+}
+
+.meme-form {
+	display: inline-block;
+	align-items: center;
+    margin-left: 25%;
+}
+
+h1 {
+    font-size: 85px;
+	color: white;
+}
+
+p {
+	font-size: 40px;
+	color: white;
+}
+
+body {
+	background-color: aquamarine;
+}
+
+.form-control {
+    width: 700px;
+    margin: 5%;
+}
+
+li {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+    margin: 15px;
+}
+
+.up {
+    font-size: 40px;
+    font-family: Impact, 'Arial', sans-serif;
+	position: absolute;
+	top: 0;
+	left: 30%;
+	text-shadow: 2px 2px black;
+	color: white;
+    text-align: center;
+}
+
+.down {
+    font-size: 40px;
+    font-family: Impact, 'Arial', sans-serif;
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	text-shadow: 2px 2px black;
+	color: white;
+    text-align: center;
+	
+}
+
+#del {
+    background-color: blueviolet;
+    position: relative;
+    font-size: 20px;
+    margin: 5px;
+}
