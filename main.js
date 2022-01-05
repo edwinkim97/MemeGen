@@ -1,36 +1,37 @@
 //Setting Selectors
-let meme=document.getElementById("user-info");
+var meme=document.getElementById("user-info");
+var memes=document.getElementById("memeArea");
 
 //Event Function
 meme.addEventListener("submit", function(e){
-	e.preventDefault();
+    
+    var down=document.createElement('div');
+    down.setAttribute('id', 'down');
+    down.innerText=document.getElementById("bottom-text").value;
 
-    let down=document.createElement('div');
-	down.setAttribute('class', 'down');
-	down.innerText=document.getElementById("bottom-text").value;
-	
-    let up=document.createElement("div");
-	up.setAttribute("class", "up");
-	up.innerText = document.getElementById("top-text").value;
-
-	let del=document.createElement('button');
+    var up=document.createElement("div");
+    up.setAttribute("id", "up");
+    up.innerText = document.getElementById("top-text").value;
+    
+    var del=document.createElement('button');
+    del.textContent="Delete";
     del.setAttribute('id','del')
-	del.setAttribute('type', 'button');
-    del.innerText="Delete";
-	del.addEventListener('click', function(){
-		unlistedMeme.remove();
-	})
 
-	let imgUrl=document.createElement("img");
+	var imgUrl=document.createElement("img");
 	imgUrl.src=document.getElementById("img-url").value;
 	
-	let memes=document.getElementById("memeArea");
-	let unlistedMeme=document.createElement("li");
+	var newMeme=document.createElement("li");
 
-    memes.appendChild(unlistedMeme);
-	unlistedMeme.appendChild(imgUrl);
-    unlistedMeme.appendChild(up);
-	unlistedMeme.appendChild(down);
-	unlistedMeme.appendChild(del);
+    del.addEventListener('click', function(){
+		newMeme.remove();
+	})
+
+    e.preventDefault();
+
+    memes.appendChild(newMeme);
+	newMeme.appendChild(imgUrl);
+    newMeme.appendChild(up);
+	newMeme.appendChild(down);
+	newMeme.appendChild(del);
     meme.reset();
 });

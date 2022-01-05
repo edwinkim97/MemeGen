@@ -1,5 +1,5 @@
 header {
-    font-family: Impact, 'Arial', sans-serif;
+    font-family: Impact;
 }
 
 .meme-form {
@@ -34,7 +34,7 @@ li {
     margin: 15px;
 }
 
-.up {
+#up {
     font-size: 40px;
     font-family: Impact, 'Arial', sans-serif;
 	position: absolute;
@@ -45,9 +45,9 @@ li {
     text-align: center;
 }
 
-.down {
+#down {
     font-size: 40px;
-    font-family: Impact, 'Arial', sans-serif;
+    font-family: Impact;
 	position: absolute;
 	bottom: 0;
 	left: 30%;
